@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var users = []
+        function getAllusersFromServer(displayAllUsers){
+            var getdata = new XMLHttpRequest()
+                getdata.onreadystatechange=function(){
+                    if(getdata.readyState = 4 && getdata.status == 200){
+                        users = JSON.parse(getdata.response)
+                        console.log("User inside displayMyFirstName: ", users)
+                    }
+                }
+            getdata.open("GET", "http://www.filltext.com/?rows=10&fname={firstName}&lname={lastName}&pretty=true")
+            getdata.send()
+        }
+        function displayAllUsers(){
+            console.log("Users inside displayAllUsers: ", users)
+        }
+        getAllusersFromServer()
+        displayAllUsers()
+    </script>
+</body>
+</html>

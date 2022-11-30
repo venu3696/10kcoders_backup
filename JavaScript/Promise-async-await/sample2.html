@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mydata = new Promise((success,failure)=>{
+            success()
+        })
+        mydata.then (()=>{
+            console.log("iam from Success...")
+        }).catch(()=>{
+            console.log("iam from failure...")
+        })
+    </script>
+</body>
+</html>
