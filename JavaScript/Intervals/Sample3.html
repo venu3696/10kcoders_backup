@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 350px;
+        height: 350px;
+        cursor: pointer;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="1.jpeg" alt="" onmouseover="stopSlide()" onmouseout="startSlide()"/>
+      <p style="color: red;display: none;">You Just Stopped the Sliding</p>
+    </div>
+    <script>
+      function changeImage() {
+        var imageAddress = document.querySelector("img").src;
+        var imageNumber = imageAddress.substr(
+          imageAddress.lastIndexOf("/") + 1,
+          1
+        );
+        imageNumber++;
+        if (imageNumber == 6) {
+          imageNumber = 1;
+        }
+        document
+          .querySelector("img")
+          .setAttribute("src", imageNumber + ".jpeg");
+      }
+      var sliding;
+      function startSlide() {
+        sliding = setInterval(() => {
+          changeImage();
+        }, 1000);
+        document.querySelector("p").style.display="none"
+      }
+      function stopSlide() {
+        clearInterval(sliding);
+        document.querySelector("p").style.display="block"
+      }
+    //   document.querySelector("img").onmouseover = function () {
+    //     stopSlide();
+    //   };
+    //   document.querySelector("img").onmouseout = function () {
+    //     startSlide();
+    //   };
+      startSlide();
+    </script>
+  </body>
+</html>

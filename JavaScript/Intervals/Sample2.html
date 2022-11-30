@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: 70px;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <img src="1.jpeg" alt=""> </li>
+        <li><img src="2.jpeg" alt=""> </li>
+        <li><img src="3.jpeg" alt=""> </li>
+        <li><img src="4.jpeg" alt=""> </li>
+        <li><img src="5.jpeg" alt=""> </li>
+    </ul>
+
+    <script>
+        document.querySelector("ul").onclick=function(event){
+            var selectedElement = event.target.parentNode;
+            var parentElement = selectedElement.parentNode
+            console.log(selectedElement);
+            parentElement.removeChild(selectedElement)
+
+        }
+    </script>
+</body>
+</html>
