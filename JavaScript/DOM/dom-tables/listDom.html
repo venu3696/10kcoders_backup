@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        //  for(i=0;i<5;i++){
+        //  var myHeading=document.createElement("h2")
+        //  document.body.appendChild(myHeading)
+        //  }
+        var person=[
+    {
+        "id": 101,
+        "email": "AMalo@rutrum.net"
+    },
+    {
+        "id": 102,
+        "email": "RGoodman@quis.net"
+    },
+    {
+        "id": 103,
+        "email": "RVelasco@velit.net"
+    },
+    {
+        "id": 104,
+        "email": "AFlege@at.io"
+    },
+    {
+        "id": 105,
+        "email": "NKoprowski@sapien.gov"
+    },
+    {
+        "id": 106,
+        "email": "SOlsen@tincidunt.com"
+    },
+    {
+        "id": 107,
+        "email": "KLeeman@turpis.io"
+    },
+    {
+        "id": 108,
+        "email": "HFinn@porta.gov"
+    },
+    {
+        "id": 109,
+        "email": "HPitzel@consectetur.com"
+    },
+    {
+        "id": 110,
+        "email": "EBaker@porttitor.ly"
+    }
+]
+//console.log(person.length)
+//person.forEach((user)=>{
+//var myHeading=document.createElement("h2")
+//myHeading.innerHTML=user.email+" "+user.id
+//document.body.appendChild(myHeading)
+//})
+person.forEach((user)=>{
+    var myUl=document.createElement("li");
+   myUl.innerHTML=user.email;
+   document.querySelector("ul").appendChild(myUl);
+})
+</script>
+</body>
+</html>

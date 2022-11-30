@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Introduction</title>
+</head>
+<body>
+    <script>
+        var players = ["Rohit","Rahul","kohli","Pant"];
+
+        console.log(players);
+        // length of an array
+        console.log(players.length);
+
+        // accessing values using for loop
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        //ES5 moethods(ECMA Script)
+        document.write("<br> ES5 methods in arrays : push() <br>")
+        players.push("SKY"); // Push method will add a value at the end of an array.
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        document.write("<br>");
+        document.write("<br> ES5 methods in arrays : unshift() <br>");
+        players.unshift("samson"); // unshift method will add the value at the start of an array.
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        document.write("<br>");
+        document.write("<br> ES5 methods in arrays : splice() <br>");
+        players.splice(2,0,"Hardik Pandy"); // splice method will add the value at the specified position. if 2nd position is 0 it will add,if the second value is 2 from the specified position it will remove 2 elements and it will add the specified value which we provided
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        document.write("<br>");
+        document.write("<br> ES5 methods in arrays : pop() <br>");
+        players.pop(); // POP method will remove the last value of an array.
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        document.write("<br>");
+        document.write("<br> ES5 methods in arrays : shift() <br>");
+        players.shift(); // shift method will remove the first value of an array.
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        document.write("<br>");
+        document.write("<br> ES5 methods in arrays : sort() <br>");
+        players.sort(); // sort method will sort it in alphebical order
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+
+        document.write("<br>");
+        document.write("<br> ES5 methods in arrays : reverse() <br>");
+        players.reverse(); // reverse method will reverse the array
+        for(i=0;i<players.length;i++){
+            document.write(i+1+") " + players[i]+" has his number "+(i+1)+" position in Indian team."+"<br>")
+        }
+    </script>
+</body>
+</html>

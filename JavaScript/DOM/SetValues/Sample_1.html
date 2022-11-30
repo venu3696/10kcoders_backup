@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First Name : </label>
+      <input type="text" name="" id="fname" /> <br />
+      <br />
+      <label for="lname">Last Name : </label>
+      <input type="text" name="" id="lname" /> <br />
+      <br />
+      <label for="university">University :</label>
+      <input type="text" name="" id="university"> <br>
+      <br>
+      <label for="group">Group  :</label>
+      <input type="text" name="" id="group"> <br>
+      <br>
+     
+
+      <!-- <button onclick="getValues()" type="button">Get Values</button> -->
+
+      <button type="button" onclick="setValues()">Set Value</button>
+    </form>
+
+          <script>
+            // how to get the values Using the getValues
+          
+           function getValues(){
+              var fname=document.getElementById("fname");
+              console.log(fname)
+           }
+        //  Fill the data automatically using the setValue
+            function setValues(){
+              var fname="Venu"
+              var lname="Alakuntla"
+              var university="Osmania"
+              var group= "Computers"
+              
+             document.getElementById("fname").value=fname;
+             document.getElementById("lname").value=lname;
+             document.getElementById("university").value=university;
+             document.getElementById("group").value=group;
+
+            }
+
+          </script>
+  </body>
+</html>

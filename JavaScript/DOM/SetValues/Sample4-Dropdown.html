@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="">Choose Your State :</label> 
+        <select  id="stateName" multiple>  <!--   multiple   -->
+            <option value="telangana">Telangana</option>
+            <option value="ap">AndhraPradesh</option>
+            <option value="mh">Maharashtra</option>
+            <option value="mumbai">Mumbai</option>
+        </select> <br> <br>
+        <button type="button" onclick="setState()">Select State</button>
+    </form>
+    <script>
+        function setState(){
+            var selectStateElement=document.getElementById("stateName").children
+            stateVal=["telangana", "mh"]
+
+            for(i=0; i<selectStateElement.length;i++){
+                var check = stateVal.find((val)=>val == selectStateElement[i].value)
+                if(check){
+                    selectStateElement[i].selected = true
+                }
+            }
+        }
+    </script>
+</body>
+</html>

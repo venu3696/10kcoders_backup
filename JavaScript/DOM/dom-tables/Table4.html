@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">Id</th>
+          <th rowspan="2">Title</th>
+          <th rowspan="2">Price</th>
+          <th rowspan="2">Description</th>
+          <th rowspan="2">Category</th>
+          <th rowspan="2">Image</th>
+          <th rowspan="1" colspan="2" style="width: 100px">Rating</th>
+        </tr>
+        <tr>
+          <th>Rate</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="./table4.js"></script>
+    <script>
+      function displayProducts() {
+        values.forEach((value) => {
+          console.log(value);
+          var myTr = document.createElement("tr");
+          for (a in value) {
+            var myTd = document.createElement("td");
+            if (a !== "image" && a !== "rating") {
+              myTd.innerHTML = value[a];
+              myTr.appendChild(myTd);
+            } else if (a == "image") {
+              // this will excute only for Image
+              var myImg = document.createElement("img");
+              myImg.setAttribute("src", value[a]);
+              myImg.style.width = "100px";
+              myTd.appendChild(myImg);
+              myTr.appendChild(myTd);
+            } else if (a == "rating") {
+              //this will exute only for Rating
+              var ratingObj = value[a];  
+              for (b in value[a]) {
+                var myRatingTd = document.createElement("td");
+                myRatingTd.innerHTML = ratingObj[b];
+                myTr.appendChild(myRatingTd);
+              }
+            }
+            // myTr.appendChild(myTd);
+          }
+          document.querySelector("tbody").appendChild(myTr);
+        });
+      }
+      displayProducts();
+    </script>
+  </body>
+</html>

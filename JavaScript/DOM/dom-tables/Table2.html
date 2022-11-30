@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Lname</th>
+                <th>Fname</th>
+                <th>Telephone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        var Info=[
+        {
+            "fname": "Elaine",
+            "lname": "Gunter",
+            "tel": "(787)788-5426",
+            "address": "7883 Odio Dr",
+            "city": "Lacey",
+            "state": "DC",
+            "zip": 79023
+        },
+        {
+            "fname": "Lois",
+            "lname": "Kluger",
+            "tel": "(367)467-8048",
+            "address": "2562 Odio Ln",
+            "city": "Cypress",
+            "state": "OK",
+            "zip": 76324
+        },
+        {
+            "fname": "Susen",
+            "lname": "Souther",
+            "tel": "(134)598-9087",
+            "address": "5012 Et Rd",
+            "city": "Pickerington",
+            "state": "WV",
+            "zip": 23931
+        },
+        {
+            "fname": "Milagros",
+            "lname": "Siecke",
+            "tel": "(981)508-0509",
+            "address": "141 Amet Ct",
+            "city": "Furlong",
+            "state": "OR",
+            "zip": 11004
+        },
+        {
+            "fname": "Domingo",
+            "lname": "Rogers",
+            "tel": "(110)636-2439",
+            "address": "9518 Convallis Rd",
+            "city": "Winona Lake",
+            "state": "KS",
+            "zip": 49905
+        },
+        {
+            "fname": "Ronit",
+            "lname": "Beonde",
+            "tel": "(937)446-8258",
+            "address": "6535 Tincidunt St",
+            "city": "Norwalk",
+            "state": "MO",
+            "zip": 13887
+        },
+        {
+            "fname": "Stella",
+            "lname": "Karneol",
+            "tel": "(936)881-4286",
+            "address": "4057 Amet Dr",
+            "city": "Arvada",
+            "state": "AK",
+            "zip": 13990
+        },
+        {
+            "fname": "Aydin",
+            "lname": "Aresti",
+            "tel": "(717)089-3626",
+            "address": "6240 Tellus Dr",
+            "city": "Traverse City",
+            "state": "TN",
+            "zip": 62564
+        },
+        {
+            "fname": "Julia",
+            "lname": "Llc",
+            "tel": "(527)048-6068",
+            "address": "308 Velit St",
+            "city": "St. Paul",
+            "state": "WV",
+            "zip": 49940
+        },
+        {
+            "fname": "Lucy",
+            "lname": "Bias",
+            "tel": "(175)957-6463",
+            "address": "3363 Aliquam Ct",
+            "city": "Snow Hill",
+            "state": "NV",
+            "zip": 88821
+        }
+    ]
+    Info.forEach((student)=>{
+        var myTr= document.createElement("tr")
+
+        for(a in student){
+            var myTd= document.createElement("td")
+            myTd.innerHTML=student[a]
+            myTr.appendChild(myTd)
+        }
+        document.querySelector("tbody").appendChild(myTr)
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="venu">Java Script Basics</div>
+    <div id="venu1">This is about JavaScript</div>
+    <div class="venu2">Iam from Suryapet</div>
+    <script>
+        
+             document.write("Hi everyone")
+             document.getElementById("venu").innerHTML= "My name is venu"
+             document.querySelector("div").innerHTML= "Iam from Web"
+             var allDivs=document.getElementsByTagName("div")
+             allDivs[0].innerHTML="Value changed from DOM Methods"
+             allDivs[2].innerHTML="Value change form DOM Methods with index"
+             console.log(allDivs)
+    </script>
+</body>
+</html>

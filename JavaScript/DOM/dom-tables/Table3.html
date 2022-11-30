@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Fname</th>
+                <th>Lname</th>
+                <th>Telephone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <script>
+        var values=[
+    {
+        "fname": "Nichelle",
+        "lname": "Obermann",
+        "tel": "(427)839-5708",
+        "address": "3889 Consequat Rd",
+        "city": "Pompano Beach",
+        "state": "WI",
+        "zip": 94091
+    },
+    {
+        "fname": "Wayne",
+        "lname": "Coopr",
+        "tel": "(214)247-9382",
+        "address": "1112 Eros Ct",
+        "city": "Nicholasville",
+        "state": "ME",
+        "zip": 68602
+    },
+    {
+        "fname": "Doug",
+        "lname": "Liu",
+        "tel": "(356)451-8530",
+        "address": "69 Velit Ln",
+        "city": "Delray",
+        "state": "MN",
+        "zip": 88291
+    },
+    {
+        "fname": "Yong",
+        "lname": "Kirchner",
+        "tel": "(785)852-1377",
+        "address": "8855 Magna St",
+        "city": "Virginia Beach",
+        "state": "OK",
+        "zip": 56206
+    },
+    {
+        "fname": "Lawrence",
+        "lname": "Lessenberry",
+        "tel": "(288)247-4294",
+        "address": "8738 Orci Ct",
+        "city": "Burke",
+        "state": "DC",
+        "zip": 92954
+    },
+    {
+        "fname": "Clyde",
+        "lname": "Kandray",
+        "tel": "(436)970-9629",
+        "address": "4862 Amet Rd",
+        "city": "Cumming",
+        "state": "HI",
+        "zip": 99529
+    },
+    {
+        "fname": "Phyllis",
+        "lname": "Dupuy",
+        "tel": "(150)206-9780",
+        "address": "7439 Sed Ln",
+        "city": "Sinton",
+        "state": "MI",
+        "zip": 28772
+    },
+    {
+        "fname": "Jasmine",
+        "lname": "Grund",
+        "tel": "(681)975-1530",
+        "address": "3486 Mi Dr",
+        "city": "Chester",
+        "state": "UT",
+        "zip": 34716
+    },
+    {
+        "fname": "Toya",
+        "lname": "Molina",
+        "tel": "(142)373-9944",
+        "address": "4552 Vel Rd",
+        "city": "Gig Harbor",
+        "state": "TX",
+        "zip": 65152
+    },
+    {
+        "fname": "Megh",
+        "lname": "Kornation",
+        "tel": "(684)884-8027",
+        "address": "3761 Tellus Dr",
+        "city": "Owensboro",
+        "state": "ND",
+        "zip": 46172
+    }
+]
+        values.forEach((details)=>{
+            var myTr=document.createElement("tr")
+
+            for(a in details){
+                var myTd=document.createElement("td")
+                myTd.innerHTML=details[a]
+                myTr.appendChild(myTd)
+            }
+            document.querySelector("tbody").appendChild(myTr)
+        })
+    </script>
+</body>
+</html>

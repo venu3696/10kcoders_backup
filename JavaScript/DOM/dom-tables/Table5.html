@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User ID</th>
+          <th>Date</th>
+          <th>Products</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./table5.js"></script>
+    <script>
+      console.log(hello);
+      hello.forEach((helloItem) => {
+        console.log(helloItem);
+        var myTr = document.createElement("tr");
+        for (a in helloItem) {
+          var myTd = document.createElement("td");
+          if (a !== "products" && a !== "__v" && a!=="date") {
+            myTd.innerHTML = helloItem[a];
+            myTr.appendChild(myTd);
+          } else if (a == "products") {
+            var productTable = document.createElement("table");
+            // can't use for loop because products in array.
+            helloItem[a].forEach((items) => {
+              console.log(items);
+              var myProductTr = document.createElement("tr");
+              for (c in items) {
+                 var myCtd = document.createElement("td");
+                myCtd.innerHTML = c+": "+ items[c];
+                myProductTr.appendChild(myCtd);
+              }
+              productTable.appendChild(myProductTr);
+            });
+            myTd.appendChild(productTable);
+            myTr.appendChild(myTd);
+          }else if(a == "date"){
+            myTd.innerHTML=new Date(helloItem[a]).toLocaleDateString();
+            myTr.appendChild(myTd)
+          }
+        }
+        document.querySelector("tbody").appendChild(myTr);
+      });
+    </script>
+  </body>
+</html>

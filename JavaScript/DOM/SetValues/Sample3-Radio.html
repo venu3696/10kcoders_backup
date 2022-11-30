@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="status"> Status:  </label> <br>
+        <input type="radio"  name="status" value="male">   Male <br> <br>
+        <input type="radio"  name="status" value="female"> Female <br> <br>
+
+        <button type="button" onclick="setGender()"> Enter</button>
+    </form>
+    <script>
+        function setGender(){
+            var statusValue = "female" // When click Enter button This female will display 
+            var allRadioBtns=document.getElementsByName("status")
+            allRadioBtns.forEach((element)=>{
+                if(element.value == statusValue){
+                    element.checked=true
+                }
+            })
+        }
+    </script>
+</body>
+</html>

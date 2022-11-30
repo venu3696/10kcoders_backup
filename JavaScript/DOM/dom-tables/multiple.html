@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label>First Name:</label>
+    <input type="text" name="" id="fname"> <br>
+
+    <input type="radio" name="gender" class="hello" value="male" id="">Male <br>
+    <input type="radio" name="gender" class="hello" value="female" id="">Female <br>
+    <button onclick="getGender()" type="button">Submit</button>
+    </form>    
+    <script>
+        function getGender(){
+            var allRadiosTagName=document.getElementsByTagName("input")
+            var allRadiosByName=document.getElementsByName("gender")
+            var allRadiosByClassName= document.getElementsByClassName("hello")
+            var allRadiosQuerySelectorAll= document.querySelectorAll("input")
+            console.log("allRadiosTagName:",allRadiosTagName)
+            console.log("allRadiosByName",allRadiosByName)
+            console.log("allRadiosByClassName",allRadiosByClassName )
+            console.log("allRadiosQuerySelectorAll",allRadiosQuerySelectorAll)
+
+            allRadiosTagName.map((btn)=>{
+                if(btn.checked){
+                    console.log(btn.value)
+                }
+            })
+            allRadiosByName.forEach((btn)=>{
+                if(btn.checked){
+                console.log(btn.value)
+                }
+            })
+            for(i=0;i<allRadiosByClassName.length;i++){
+                if(allRadiosByClassName[i].checked){
+                    console.log("From html collections:", allRadiosByClassName[i].value)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
