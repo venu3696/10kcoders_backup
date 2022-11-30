@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var users = []
+        function getAllUsersFromData(){
+            return new Promise((success,failure)=>{
+                var getData = new XMLHttpRequest();
+                getData.onreadystatechange = function(){
+                    if(getData.readyState == 4 && getData.status == 200){
+                        users = JSON.parse(getData.response);
+                        failure(users)
+                    }
+                }
+                getData.open("GET" , "http://www.filltext.com/?rows=5&id={index}&email={email}&username={username}&password={randomString|5}&pretty=true")
+                getData.send()
+            })
+        }
+            getAllUsersFromData().then((users)=>{
+               console.log("Iam form success Promise", users)
+              
+            })
+            .catch((user)=>{
+                console.log("Iam failure promise", users)
+            })
+            .finally((users)=>{
+                document.getElementById("demo").innerHTML="server communication completed"
+            })
+        
+    </script> 
+</body>
+</html>
