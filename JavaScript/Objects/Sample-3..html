@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,4 +28,35 @@
        }
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello From HTML</h2>
+    <script>
+        var person = {
+            myName : 'venu',
+            email:"venu3696@gmail.com",
+            mobile:7095701477
+        } ; 
+
+        person['city'] = "Suryapet" // Adding a Property with [] Notation
+        person['language'] = "Telugu";
+
+        // document.write("My Name : "+person.myName + "<br> Email : "+person.email+"<br> Mobile : "+person.mobile)
+        // document.write(person.myName+"<br>"+person.email+"<br>"+person.mobile)
+        // console.log(person)
+
+       for(info in person){
+        document.write(info+" : "+person[info]+"<br>")
+       }
+    </script>
+</body>
+>>>>>>> cfdff6e09e7438f4f6871d779124470f41b83eda
 </html>

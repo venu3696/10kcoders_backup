@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -189,4 +190,197 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: x-large;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Ind vs Zim</h2>
+    <script>
+        var India= [
+            {
+                Name : "KL Rahul",
+                Runs : 51,
+                Balls: 35,
+                Fours: 3,
+                Sixes: 3,
+                Sr   : 145.71
+            },
+            {
+                Name : "R.Sharma",
+                Runs : 15,
+                Balls: 13,
+                Fours: 02,
+                Sixes: 0,
+                Sr   : 115.38
+            },
+            {
+                Name : "V.Kohli",
+                Runs : 26,
+                Balls: 25,
+                Fours: 2,
+                Sixes: 0,
+                Sr   : 104
+            },
+            {
+                Name : "S.Yadav",
+                Runs : 61,
+                Balls: 25,
+                Fours: 6,
+                Sixes: 4,
+                Sr   : 244
+            },
+            {
+                Name : "R.Pant",
+                Runs : 3,
+                Balls: 5,
+                Fours: 0,
+                Sixes: 0,
+                Sr   : 60
+            },
+            {
+                Name : "H.Pandya",
+                Runs : 18,
+                Balls: 18,
+                Fours: 02,
+                Sixes: 0,
+                Sr   : 100.00
+            }]
+
+        var TotalScore = India.reduce((initialValue, player) => {
+            if (initialValue.Runs>=0) {
+                return initialValue.Runs + player.Runs
+            } else {
+                return initialValue + player.Runs
+            }
+
+        })
+        document.write("Total Score of India : " + TotalScore + "<br>")
+
+        var Totalfours = India.reduce((initialValue, player) => {
+            if (initialValue.Fours >= 0) {
+                return initialValue.Fours + player.Fours
+            } else {
+                return initialValue + player.Fours
+            }
+        })
+        document.write("Total Fours of India : " + Totalfours + "<br>")
+
+
+        var Totalsixes = India.reduce((initialValue, player) => {
+            if (initialValue.Sixes >= 0) {
+                return initialValue.Sixes + player.Sixes
+            } else {
+                return initialValue + player.Sixes
+            }
+        })
+        document.write("Total Sixes of India : " + Totalsixes + "<br>")
+
+        var lowestruns = India.reduce(function (a, b) {
+            if (Object.values(a).length > 0) {
+                return Math.min(a.Runs, b.Runs);
+            } else {
+                return Math.min(a, b.Runs);
+            }
+        });
+        
+        var lowestrunsplayers = India.filter((player) => {
+           
+            return player.Runs == lowestruns
+
+        })
+        lowestrunsplayers.forEach((player) => {
+
+            document.write("Lowest Runs Player : " +player.Runs + "<br>")
+
+        })
+        
+        // document.write("lowestruns in India:" + lowestruns + "<br>")
+
+
+
+        var highestruns = India.reduce(function (a, b) {
+            if (Object.values(a).length > 0) {
+                return Math.max(a.Runs, b.Runs);
+            } else {
+                return Math.max(a, b.Runs);
+            }
+        });
+        console.log("Highest Runs    : ", highestruns);
+
+        var highestrunsplayers = India.filter((player) => {
+            console.log(player)
+            return player.Runs == highestruns
+
+        })
+        highestrunsplayers.forEach((player) => {
+
+            document.write("Highest Runs Player : " + player.Name + "<br>")
+
+        })
+        document.write("Highest Runs in India : " + highestruns+"<br>")
+
+
+
+        var lowestrikerate = India.reduce(function (a, b) {
+            if (Object.values(a).length > 0) {
+                return Math.min(a.Sr, b.Sr);
+            } else {
+                return Math.min(a, b.Sr);
+            }
+        });
+        console.log("Lowest Strike Rate : ", lowestrikerate);
+
+        var lowestrikerateplayers = India.filter((player) => {
+            console.log(player)
+            return player.Sr == lowestrikerate
+
+        })
+        lowestrikerateplayers.forEach((player) => {
+
+            document.write("Lowest strike rate Palyer :" + player.Name + "<br>")
+
+        })
+        document.write("Lowest strike rate Palyer : " + lowestrikerate + "<br>")
+
+
+        var highestrikerate = India.reduce(function (a, b) {
+            if (Object.values(a).length > 0) {
+                return Math.max(a.Sr, b.Sr);
+            } else {
+                return Math.max(a, b.Sr);
+            }
+        });
+        console.log("Highest Strike Rate : ", highestrikerate);
+
+        var highestrikerateplayers = India.filter((player) => {
+            console.log(player)
+            return player.Sr == highestrikerate
+
+        })
+        highestrikerateplayers.forEach((player) => {
+
+            document.write("Highest Strikerate Palyer : " + player.Name + "<br>")
+
+        })
+        document.write("Highest Strikerate Palyer  : " + highestrikerate)
+
+    </script>
+</body>
+
+>>>>>>> cfdff6e09e7438f4f6871d779124470f41b83eda
 </html>

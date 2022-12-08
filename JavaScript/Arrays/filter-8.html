@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html lang="en">
 
 <head>
@@ -30,4 +31,38 @@
     </script>
 </body>
 
+=======
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var playersDetails = [
+            { name: "Rohit", runs: 15 },
+            { name: "Rahul", runs: 51 },
+            { name: "Kohli", runs: 26 },
+            { name: "Hardik", runs: 18 },
+            { name: "Surya", runs: 61 },
+            { name: "Dinesh", runs: 0 },
+        ];
+
+        var above50 = playersDetails.filter((player) => {
+            return player.runs >= 50;
+        });
+
+        var lessthan20 = playersDetails.filter((player)=>{
+            return player.runs < 20;
+        })
+        console.log(above50);
+        console.log(lessthan20);
+    </script>
+</body>
+
+>>>>>>> cfdff6e09e7438f4f6871d779124470f41b83eda
 </html>
