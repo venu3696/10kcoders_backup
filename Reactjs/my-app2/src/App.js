@@ -17,8 +17,8 @@ import Func5 from "./Functional-components/Func5";
 import Func6 from "./Functional-components/Func6";
 import Func7 from "./Functional-components/Func7";
 import Func8 from "./Functional-components/Func8";
-import {Func9, Func10} from "./Functional-components/Func9";
-// import Func10 from "./Functional-components/Func10";
+import Func9 from "./Functional-components/Func9";
+import Func10 from "./Functional-components/Func10";
 
 
 function App() {
