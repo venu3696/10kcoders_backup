@@ -1,10 +1,12 @@
-import LifeCycleA from "./Components/LifeCycleA";
+// import LifeCycleA from "./Components/LifeCycleA";
+import Users from "./Components/Users";
 
 
 function App() {
   return (
     <div className="App">
-    <LifeCycleA/>
+    {/* <LifeCycleA/> */}
+    <Users/>
     </div>
   );
 }

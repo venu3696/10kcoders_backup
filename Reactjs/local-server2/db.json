@@ -1,0 +1,162 @@
+{
+  "students_1": [
+    {
+      "id": 1,
+      "university": "MahatmaGandhi University ",
+      "institute": "Spandana",
+      "branch": "IT",
+      "degree": "UG",
+      "status": "pursuing",
+      "avgCPI": "9.3",
+      "blog": "venu3696.com"
+    },
+    {
+      "id": 3,
+      "university": "JNTU University ",
+      "institute": "HELLO",
+      "branch": "IT",
+      "degree": "UG",
+      "status": "pursuing",
+      "avgCPI": "9.3",
+      "blog": "venu3696.com"
+    },
+    {
+      "id": 2,
+      "university": "Osmania University",
+      "institute": "Pragna",
+      "branch": "CSE",
+      "degree": "UG",
+      "status": "completed",
+      "avgCPI": "7.5",
+      "blog": "hello.com"
+    }
+  ],
+  "Users_2": [
+    {
+      "id": 1,
+      "name": " Venu",
+      "username": "Venu1234",
+      "email": "venu636@gmail.com",
+      "password": "98796",
+      "confirmPassword": "98796"
+    },
+    {
+      "id": 2,
+      "name": " Sam",
+      "username": "sam876",
+      "email": "sam87@gmail.com",
+      "password": "978",
+      "confirmPassword": "978"
+    },
+    {
+      "id": 3,
+      "name": "Sandeep",
+      "username": "Sandhu-67",
+      "email": "sandeep@gmail.com",
+      "password": "8976",
+      "confirmPassword": "9789"
+    },
+    {
+      "name": "RamaKrishna",
+      "username": "ram125-ff",
+      "email": "ram1234@gmail.com",
+      "password": "293847",
+      "confirmPassword": "34355",
+      "id": 4
+    }
+  ],
+  "address_3": [
+    {
+      "id": 1,
+      "street": "Campus Road",
+      "city": "Hyderabad",
+      "state": "TELANGANA",
+      "zipcode": "508279",
+      "country": "India"
+    },
+    {
+      "id": 2,
+      "street": "ABC road",
+      "city": "Hyderabad",
+      "state": "TELANGANA",
+      "zipcode": "509871",
+      "country": "India"
+    },
+    {
+      "id": 3,
+      "street": "Tty road",
+      "city": "Hyderabad",
+      "state": "TELANGANA",
+      "zipcode": "509876",
+      "country": "Australia"
+    },
+    {
+      "id": 4,
+      "street": "Bypass road",
+      "city": "Suryapet",
+      "state": "TELANGANA",
+      "zipcode": "987987",
+      "country": "Brazil"
+    }
+  ],
+  "datails_4": [
+    {
+      "id": 1,
+      "firstName": "Srinivas",
+      "lastName": "Alakuntla",
+      "dateOfBirth": "12/16/1998",
+      "email": "srinu@gmail.com",
+      "mobile": "9787667882"
+    },
+    {
+      "id": 2,
+      "firstName": "Gani",
+      "lastName": "Nayak",
+      "dateOfBirth": "02/05/2000",
+      "email": "gani@gmail.com",
+      "mobile": "0879867677"
+    },
+    {
+      "id": 3,
+      "firstName": "Upender",
+      "lastName": "Yadav",
+      "dateOfBirth": "11/12/1995",
+      "email": "uppi@gmail.com",
+      "mobile": "023948744"
+    }
+  ],
+  "labour_5": [
+    {
+      "id": 1,
+      "userName": "Venu",
+      "password": "12345",
+      "email": "venu@gmail.com",
+      "gender": "male",
+      "dateOfBirth": "16/12/1999"
+    },
+    {
+      "id": 2,
+      "userName": "Anu",
+      "password": "93847jf",
+      "email": "anu@gmail.com",
+      "gender": "female",
+      "dateOfBirth": "21/02/2002"
+    },
+    {
+      "id": 3,
+      "userName": "Rani",
+      "password": "sldfk7",
+      "email": "rani@gmail.com",
+      "gender": "female",
+      "dateOfBirth": "05/01/2000"
+    },
+    {
+      "id": 4,
+      "userName": "soumya",
+      "password": "osdfisofi",
+      "email": "soumya@gmail.com",
+      "gender": "female",
+      "dateOfBirth": "1222-12-12"
+    }
+  ]
+}
