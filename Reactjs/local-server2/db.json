@@ -8,7 +8,7 @@
       "degree": "UG",
       "status": "pursuing",
       "avgCPI": "9.3",
-      "blog": "venu3696.com"
+      "blog": "youtube.com"
     },
     {
       "id": 3,
@@ -38,7 +38,7 @@
       "username": "Venu1234",
       "email": "venu636@gmail.com",
       "password": "98796",
-      "confirmPassword": "98796"
+      "confirmPassword": "98796f"
     },
     {
       "id": 2,
@@ -129,7 +129,7 @@
     {
       "id": 1,
       "userName": "Venu",
-      "password": "12345",
+      "password": "123455",
       "email": "venu@gmail.com",
       "gender": "male",
       "dateOfBirth": "16/12/1999"
