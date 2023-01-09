@@ -57,12 +57,13 @@
       "confirmPassword": "9789"
     },
     {
-      "name": "RamaKrishna",
-      "username": "ram125-ff",
-      "email": "ram1234@gmail.com",
-      "password": "293847",
-      "confirmPassword": "34355",
       "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
     }
   ],
   "address_3": [
